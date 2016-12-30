@@ -41,8 +41,9 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 
 	<!-- concatenate and minify for production -->
-	<link rel="stylesheet" href="assets/css/reset.css" />
-	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<!-- Lea Verou's prefixfree (http://leaverou.github.io/prefixfree/), lets you use un-prefixed properties in your CSS files -->
 	<script src="assets/js/libs/prefixfree.min.js"></script>
@@ -67,57 +68,78 @@
 
 <body>
 
-<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
-
-	<header>
-
-		<h1><a href="/">Page Title</a></h1>
-
-		<nav>
-
-			<ol>
-				<li><a href="">Nav Link 1</a></li>
-				<li><a href="">Nav Link 2</a></li>
-				<li><a href="">Nav Link 3</a></li>
-			</ol>
-
-		</nav>
-
-	</header>
-
-	<article>
-
-		<h1>Article Header</h1>
-
-		<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
-
-		<h2>Article Subhead</h2>
-
-		<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
-
-	</article>
-
-	<aside>
-
-		<h2>Sidebar Content</h2>
-
-	</aside>
-
-	<footer>
-
-		<p><small>&copy; Copyright Your Name Here 2014. All Rights Reserved.</small></p>
-
-	</footer>
-
+<div class="topShipping">
+	<p>Free shipping in US and Canada!</p>
 </div>
+<div class="fixedMenu">
+	<div class="containerTop">
+		<div class="farLeft">
+			<nav>
+				<ul>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">How It Works</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="centerLogo">
+			<img src="">
+		</div>
+		<div class="farRight">
+			<nav>
+				<ul>
+					<li><a href="#">Sign in</a></li>
+					<li><a href="#">Create Showroom</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
+<script>window.jQuery || document.write("<script src='js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
 
 <!-- this is where we put our custom functions -->
 <!-- don't forget to concatenate and minify for production -->
-<script src="assets/js/functions.js"></script>
+<script src="js/functions.js"></script>
 <script>$(document).ready(initPage);</script>
 
 <!-- Asynchronous google analytics; this is the official snippet.
