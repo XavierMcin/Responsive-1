@@ -44,6 +44,7 @@
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Lea Verou's prefixfree (http://leaverou.github.io/prefixfree/), lets you use un-prefixed properties in your CSS files -->
 	<script src="assets/js/libs/prefixfree.min.js"></script>
@@ -66,7 +67,7 @@
 
 </head>
 
-<body>
+<body class="override">
 
 <div class="topShipping">
 	<p>Free shipping in US and Canada!</p>
@@ -102,11 +103,17 @@
 		</div>
 	</div>
 </div>
-<div class="imageContainer">
-	<div class="imageScroller">
-		<img src="images/_kamtemjnxy-atikh-bana.jpg">
-		<img src="">
-		<img src="">
+<div class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="images/_kamtemjnxy-atikh-bana.jpg">
+		</div>
+		<div class="item">
+			<img src="images/pexels-photo-28068.jpg">
+		</div>
+		<div class="item">
+			<img src="images/pexels-photo-94589.jpeg">
+		</div>
 	</div>
 </div>
 
@@ -147,7 +154,7 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write("<script src='js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
 
 <!-- this is where we put our custom functions -->
