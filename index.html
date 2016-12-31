@@ -68,42 +68,55 @@
 </head>
 
 <body class="override">
-
-<div class="topShipping">
-	<p>Free shipping in US and Canada!</p>
-</div>
-<div class="fixedMenu">
-	<div class="containerTop">
-		<div class="farLeft">
-			<nav>
-				<ul>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">How It Works</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="topShipping">
+				<p>Free shipping in US and Canada!</p>
+			</div>
 		</div>
-		<div class="centerLogo">
-			<img src="">
-		</div>
-		<div class="farRight">
-			<nav>
-				<ul>
-					<li><a href="#">Sign in</a></li>
-					<li><a href="#">Create Showroom</a></li>
-					<a href="#">
-						<img src="images/icons/search.png">
-					</a>
-					<a href="#">
-						<img src="images/icons/bag.png">
-						0
-					</a>
-				</ul>
-			</nav>
+	</div>
+<div class="container-fluid">
+	<div class="fixedMenu">
+		<div class="containerTop">
+			<div class="farLeft">
+				<nav>
+					<ul>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">How It Works</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="centerLogo">
+				<img src="">
+			</div>
+			<div class="farRight">
+				<nav>
+					<ul>
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">Create Showroom</a></li>
+						<a href="#">
+							<img src="images/icons/search.png">
+						</a>
+						<a href="#">
+							<img src="images/icons/bag.png">
+							0
+						</a>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</div>
 </div>
-<div class="carousel slide" data-ride="carousel">
+<div class="carousel slide" id="flicker" >
+
+	<ol class="carousel-indicators">
+		<li data-target="#flicker" data-slide-to="0" class="active"></li>
+		<li data-target="#flicker" data-slide-to="1"></li>
+		<li data-target="#flicker" data-slide-to="2"></li>
+	</ol>
+
+
 	<div class="carousel-inner">
 		<div class="item active">
 			<img src="images/_kamtemjnxy-atikh-bana.jpg">
@@ -115,6 +128,17 @@
 			<img src="images/pexels-photo-94589.jpeg">
 		</div>
 	</div>
+
+	<!--<a class="left carousel-control" href="#flicker" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+
+	<a class="right carousel-control" href="#flicker" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>-->
+
+
+
 </div>
 
 
