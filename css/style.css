@@ -34,8 +34,6 @@ blockquote {padding: 16px; background: #eee;}
 
 /* Top Nav Bar*/
 
-
-
 .topShipping {
 	width: 100%;
 	height: 30px;
@@ -166,6 +164,11 @@ blockquote {padding: 16px; background: #eee;}
 	top: 50px;
 }
 
+.carousel-indicators li.dots {
+	margin-right: 20px;
+	width: 8px;
+	height: 8px;
+}
 
 
 
