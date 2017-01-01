@@ -87,6 +87,11 @@ blockquote {padding: 16px; background: #eee;}
 	padding-left: 25px;
 	color: #9d9da1;
 	font-weight: bold;
+	transition: color .25s linear;
+}
+
+.farLeft nav ul li a:hover {
+	color: #CCC;
 }
 
 .farLeft nav ul li:first-of-type a {
@@ -127,6 +132,11 @@ blockquote {padding: 16px; background: #eee;}
 	padding-right: 25px;
 	color: #9d9da1;
 	font-weight: bold;
+	transition: color .25s linear;
+}
+
+.farRight nav ul li a:hover {
+	color: #CCC;
 }
 
 .farRight nav ul li:first-of-type a {
