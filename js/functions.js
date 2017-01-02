@@ -1,18 +1,30 @@
-// Browser detection for when you get desperate. A measure of last resort.
-
-// http://rog.ie/post/9089341529/html5boilerplatejs
-// sample CSS: html[data-useragent*='Chrome/13.0'] { ... }
-
-// Uncomment the below to use:
-// var b = document.documentElement;
-// b.setAttribute('data-useragent',  navigator.userAgent);
-// b.setAttribute('data-platform', navigator.platform);
 
 
-function initPage(){
+$(function(){
+	$(window).scroll(function(event){
+		var target = $(this).scrollTop();
 
-	// your functions go here
+		if (target >= 60) {
+			$('.fixedMenu').addClass('stuck');
+			$('.carousel').addClass('stuck');
+			$('.farLeft nav ul li a').addClass('stuck');
+			$('.centerLogo svg').addClass('stuck');
+			$('.farRight nav ul li a').addClass('stuck');
+		}
 
-	console.log('page loaded');
+		if (target < 60) {
+			$('.fixedMenu').removeClass('stuck');
+			$('.carousel').removeClass('stuck');
+			$('.farLeft nav ul li a').removeClass('stuck');
+			$('.centerLogo svg').removeClass('stuck');
+			$('.farRight nav ul li a').removeClass('stuck');
+		}
 
-};
+
+
+
+
+
+
+	});
+});

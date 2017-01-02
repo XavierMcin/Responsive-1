@@ -42,6 +42,7 @@ blockquote {padding: 16px; background: #eee;}
 	font-size: 12px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+	position: relative;
 }
 
 .topShipping p {
@@ -54,6 +55,18 @@ blockquote {padding: 16px; background: #eee;}
 	height: 80px;
 	margin-top: 30px;
 	font-family: 'Roboto', sans-serif;
+	position: relative;
+	z-index: 9;
+	left: 0;
+	background: transparent;
+	transition: background .2s ease-in-out;
+}
+
+.fixedMenu.stuck {
+	top: 0;
+	margin-top: 0;
+	position: fixed;
+	background: rgba(181,155,0,.8);
 }
 
 .containerTop {
@@ -87,11 +100,19 @@ blockquote {padding: 16px; background: #eee;}
 	padding-left: 25px;
 	color: #9d9da1;
 	font-weight: bold;
-	transition: color .25s linear;
+	transition: color .20s linear;
 }
 
 .farLeft nav ul li a:hover {
 	color: #CCC;
+}
+
+.farLeft nav ul li a.stuck {
+	color: #FFF;
+}
+
+.farLeft nav ul li a.stuck:hover {
+	color: 
 }
 
 .farLeft nav ul li:first-of-type a {
@@ -132,11 +153,19 @@ blockquote {padding: 16px; background: #eee;}
 	padding-right: 25px;
 	color: #9d9da1;
 	font-weight: bold;
-	transition: color .25s linear;
+	transition: color .20s linear;
 }
 
 .farRight nav ul li a:hover {
 	color: #CCC;
+}
+
+.farRight nav ul li a.stuck {
+	color: #FFF;
+}
+
+.farRight nav ul li a.stuck:hover {
+	color: 
 }
 
 .farRight nav ul li:first-of-type a {
@@ -147,21 +176,53 @@ blockquote {padding: 16px; background: #eee;}
 	padding-right: 10px;
 }
 
-.farRight a {
+.farRight nav ul a {
 	text-decoration: none;
 	color: #9d9da1;
 }
 
 .farRight img {
 	padding-right: 30px;
+	fill: #000;
 }
 
 .farRight a:last-of-type img {
 	padding-right: 0;
 }
 
+.centerLogo {
+	text-align: center;
+}
+
+.centerLogo svg {
+	margin-top: 15px;
+	fill: #9d9da1;
+	transform: scale(1);
+	transition: fill .20s linear, transform .2s ease-in-out;
+}
+
+.centerLogo svg:hover {
+	fill: #CCC;
+}
+
+.centerLogo svg.stuck {
+	fill: #FFF;
+	transform: scale(.9);
+}
+
+.centerLogo svg.stuck:hover {
+	fill: #CCC;
+}
+
+
+
 
 /* Image Scroller */
+
+
+
+
+
 
 .carousel-inner img {
 	margin: auto;
@@ -170,8 +231,11 @@ blockquote {padding: 16px; background: #eee;}
 .carousel {
 	width: 1580px;
 	margin: auto;
-	position: relative;
-	top: 50px;
+	margin-top: 50px;
+}
+
+.carousel.stuck {
+	margin-top: 160px; 
 }
 
 .carousel-indicators li.dots {
