@@ -4,7 +4,7 @@ $(function(){
 	$(window).scroll(function(event){
 		var target = $(this).scrollTop();
 
-		if (target >= 60) {
+		if (target >= 30) {
 			$('.fixedMenu').addClass('stuck');
 			$('.carousel').addClass('stuck');
 			$('.farLeft nav ul li a').addClass('stuck');
@@ -12,7 +12,7 @@ $(function(){
 			$('.farRight nav ul li a').addClass('stuck');
 		}
 
-		if (target < 60) {
+		if (target < 30) {
 			$('.fixedMenu').removeClass('stuck');
 			$('.carousel').removeClass('stuck');
 			$('.farLeft nav ul li a').removeClass('stuck');

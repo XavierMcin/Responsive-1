@@ -50,16 +50,22 @@ blockquote {padding: 16px; background: #eee;}
 	top: 5px;
 }
 
+.stickyMenu {
+
+}
+
+
 .fixedMenu {
 	width: 100%;
-	height: 80px;
-	margin-top: 30px;
+	max-width: 100%;
+	height: 110px;
+	margin-top: 0px;
 	font-family: 'Roboto', sans-serif;
 	position: relative;
 	z-index: 9;
 	left: 0;
 	background: transparent;
-	transition: background .2s ease-in-out;
+	transition: background .3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .fixedMenu.stuck {
@@ -69,12 +75,15 @@ blockquote {padding: 16px; background: #eee;}
 	background: rgba(181,155,0,.8);
 }
 
+
 .containerTop {
 	width: 1580px;
 	height: 80px;
-	margin: auto;
-	font-size: 0;
+	margin: 0 auto;
+	max-width: 80%;
 	position: relative;
+	top: 30px;
+	left: -30px;
 }
 
 .farLeft {
@@ -100,7 +109,7 @@ blockquote {padding: 16px; background: #eee;}
 	padding-left: 25px;
 	color: #9d9da1;
 	font-weight: bold;
-	transition: color .20s linear;
+	transition: color .05s linear;
 }
 
 .farLeft nav ul li a:hover {
@@ -226,12 +235,16 @@ blockquote {padding: 16px; background: #eee;}
 
 .carousel-inner img {
 	margin: auto;
+	max-width: 80%;
+	height: auto;
 }
 
 .carousel {
 	width: 1580px;
 	margin: auto;
 	margin-top: 50px;
+	max-width: 85%;
+	height: auto;
 }
 
 .carousel.stuck {
