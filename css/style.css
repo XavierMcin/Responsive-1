@@ -34,6 +34,17 @@ blockquote {padding: 16px; background: #eee;}
 
 /* Top Nav Bar*/
 
+span {
+	height: 80px;
+	display: block;
+	background: red;
+}
+
+.menuRow {
+	width: 84.5%;
+}
+
+
 .topShipping {
 	width: 100%;
 	height: 30px;
@@ -87,7 +98,7 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 .farLeft {
-	width: 640px;
+	width: 340px;
 	height: 80px;
 	display: inline-block;
 	position: absolute;
@@ -129,11 +140,11 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 .centerLogo {
-	width: 300px;
+	width: 600px;
 	height: 80px;
 	display: inline-block;
 	position: absolute;
-	left: 640px;
+	left: 340px;
 }
 
 .farRight {
