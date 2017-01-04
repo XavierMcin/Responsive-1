@@ -41,7 +41,10 @@ span {
 }
 
 .menuRow {
-	width: 84.5%;
+	width: 1610px%;
+	max-width: 84.5%;
+	position: relative;
+	top: 30px;
 }
 
 
@@ -140,19 +143,14 @@ span {
 }
 
 .centerLogo {
-	width: 600px;
 	height: 80px;
 	display: inline-block;
 	position: absolute;
-	left: 340px;
 }
 
 .farRight {
-	width: 640px;
 	height: 80px;
 	display: inline-block;
-	position: absolute;
-	left: 940px;
 }
 
 .farRight nav {
