@@ -264,6 +264,14 @@ blockquote {padding: 16px; background: #eee;}
 
 
 
+/* Middle Section */
+
+
+
+
+
+
+
 
 
 
@@ -353,11 +361,44 @@ blockquote {padding: 16px; background: #eee;}
 		position: absolute;
 		top: 35px;
 		left: 50px;
+		transition: transform .30s cubic-bezier(0.42, 0, 0, 0.53);
+	}
+
+	.hamMenu.menuSlide {
+		transform: translateX(-35px);
 	}
 
 	.hamMenu span:first-of-type {
 		margin-top: 13px;
+		transition: transform .25s ease-in-out;
+		transform-origin: top left;
 	}
+
+	.hamMenu.sideMenu span:first-of-type {
+		transform: rotate(42deg);
+		background: #FFF;
+	}
+
+	.hamMenu span:nth-child(2) {
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+	}
+
+	.hamMenu.sideMenu span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamMenu span:nth-child(3) {
+		transition: transform .25s ease-in-out;
+		transform-origin: bottom left;
+	}
+
+	.hamMenu.sideMenu span:nth-child(3) {
+		transform: rotate(-42deg);
+		background: #FFF;
+	}
+
+
 
 	.hamMenu span {
 		width: 16px;
@@ -390,6 +431,31 @@ blockquote {padding: 16px; background: #eee;}
 		font-size: 12px;
 	}
 
+	.menuOption {
+		width: 91%;
+		height: 100%;
+		background: #FFFB67;
+		position: fixed;
+		top: 0;
+		right: -91%;
+		z-index: 10;
+		transition: right .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+
+	.menuOption.slide {
+		right: 0;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+	.shoppingBag {
+		display: none;
+	}
+
+	.mobileMenu svg {
+		display: none;
+	}
 }
 
 
