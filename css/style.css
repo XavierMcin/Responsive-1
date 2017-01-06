@@ -34,17 +34,12 @@ blockquote {padding: 16px; background: #eee;}
 
 /* Top Nav Bar*/
 
-span {
-	height: 80px;
-	display: block;
-	background: red;
-}
+
 
 .menuRow {
-	width: 1610px%;
-	max-width: 84.5%;
+	width: 84.5%;
+	max-width: 1610px;
 	position: relative;
-	top: 30px;
 }
 
 
@@ -72,8 +67,8 @@ span {
 .fixedMenu {
 	width: 100%;
 	max-width: 100%;
-	height: 110px;
-	margin-top: 0px;
+	height: 80px;
+	margin-top: 30px;
 	font-family: 'Roboto', sans-serif;
 	position: relative;
 	z-index: 9;
@@ -108,7 +103,7 @@ span {
 }
 
 .farLeft nav {
-	font-size: 11px;
+	font-size: 10px;
 	letter-spacing: 1px;
 }
 
@@ -120,7 +115,7 @@ span {
 
 .farLeft nav ul li a {
 	text-decoration: none;
-	padding-left: 25px;
+	padding-left: 35px;
 	color: #9d9da1;
 	font-weight: bold;
 	transition: color .05s linear;
@@ -154,7 +149,7 @@ span {
 }
 
 .farRight nav {
-	font-size: 11px;
+	font-size: 10px;
 	letter-spacing: 1px;
 	float: right;
 }
@@ -163,7 +158,7 @@ span {
 	display: inline-block;
 	padding-top: 35px;
 	padding-bottom: 35px;
-	padding-right: 30px;
+	padding-right: 40px;
 }
 
 .farRight nav ul li a {
@@ -321,8 +316,79 @@ span {
 /* Media queries
 -------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+	.carousel {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+	}
 
+	.carousel-indicators {
+		display: none;
+	}
+
+	.fixedMenu {
+		display: none;
+	}
+
+	.topShipping {
+		display: none;
+	}
+
+	.mobileMenu {
+		height: 110px;
+		width: 100%;
+		text-align: center;
+		background: #FFF8A8;
+	}
+
+	svg {
+		margin-top: 28px;
+		fill: #707272;
+	}
+
+	.hamMenu {
+		width: 57px;
+		height: 41px;
+		position: absolute;
+		top: 35px;
+		left: 50px;
+	}
+
+	.hamMenu span:first-of-type {
+		margin-top: 13px;
+	}
+
+	.hamMenu span {
+		width: 16px;
+		height: 2px;
+		margin-top: 3px;
+		background: #707272;
+		display: block;
+		position: relative;
+		top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mobileMenu img {
+		fill: #707272;
+	}
+
+	.shoppingBag {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 45px;
+		right: 70px;
+		text-decoration: none;
+		color: #707272;
+	}
+
+	.shoppingBag span {
+		margin-left: 2px;
+		font-size: 12px;
+	}
 
 }
 

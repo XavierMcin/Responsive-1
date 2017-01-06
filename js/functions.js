@@ -12,7 +12,7 @@ $(function(){
 			$('.farRight nav ul li a').addClass('stuck');
 		}
 
-		if (target < 30) {
+		if (target < 100) {
 			$('.fixedMenu').removeClass('stuck');
 			$('.carousel').removeClass('stuck');
 			$('.farLeft nav ul li a').removeClass('stuck');
