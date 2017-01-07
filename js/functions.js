@@ -18,6 +18,10 @@ $(function(){
 			$('.farLeft nav ul li a').removeClass('stuck');
 			$('.centerLogo svg').removeClass('stuck');
 			$('.farRight nav ul li a').removeClass('stuck');
+		} 
+
+		if (target >= 500) {
+			$('.midRight').addClass('shown');
 		}
 
 
