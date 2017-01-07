@@ -1,4 +1,6 @@
 
+/*Scrolling Functions*/
+
 
 $(function(){
 	$(window).scroll(function(event){
@@ -22,6 +24,18 @@ $(function(){
 
 		if (target >= 500) {
 			$('.midRight').addClass('shown');
+		}
+
+		if (target < 500) {
+			$('.midRight').removeClass('shown');
+		}
+
+		if (target >= 440) {
+			$('.midLeft').addClass('shown');
+		}
+
+		if (target < 440) {
+			$('.midLeft').removeClass('shown');
 		}
 
 

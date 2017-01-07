@@ -280,6 +280,19 @@ blockquote {padding: 16px; background: #eee;}
 	height: 300px;
 }
 
+.midLeft {
+	position: relative;
+	padding-top: 30px;
+	opacity: 0;
+	transition: padding-top .5s ease-in-out, opacity .5s ease-in-out;
+	font-size: 13px;
+}
+
+.midLeft.shown {
+	padding-top: 0;
+	opacity: 1;
+}
+
 
 .midLeft h6 {
 	position: relative;
@@ -323,6 +336,7 @@ blockquote {padding: 16px; background: #eee;}
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	max-width: 98%;
 }
 
 .midButton {
@@ -403,10 +417,13 @@ blockquote {padding: 16px; background: #eee;}
 -------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 1024px) {
+	
+	/* Carousel Mobile */
+
 	.carousel {
 		width: 100%;
 		max-width: 100%;
-		margin: 0;
+		margin-top: 110px;
 	}
 
 	.carousel-indicators {
@@ -420,6 +437,13 @@ blockquote {padding: 16px; background: #eee;}
 	.topShipping {
 		display: none;
 	}
+
+
+
+	/* Mobile Menu */ 
+
+
+
 
 	.mobileMenu {
 		height: 110px;
