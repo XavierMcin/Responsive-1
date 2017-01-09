@@ -30,11 +30,11 @@ $(function(){
 			$('.midRight').removeClass('shown');
 		}
 
-		if (target >= 440) {
+		if (target >= 400) {
 			$('.midLeft').addClass('shown');
 		}
 
-		if (target < 440) {
+		if (target < 400) {
 			$('.midLeft').removeClass('shown');
 		}
 
