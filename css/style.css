@@ -86,7 +86,7 @@ blockquote {padding: 16px; background: #eee;}
 	top: 0;
 	margin-top: 0;
 	position: fixed;
-	background: rgba(181,155,0,.8);
+	background: rgba(181,155,0,.95);
 }
 
 
@@ -274,24 +274,22 @@ blockquote {padding: 16px; background: #eee;}
 
 .midSection {
 	width: 100%;
+	height: 50.8%;
 	position: relative;
-	height: 492px;
-	background: rgba(181,155,0,.8);
+	background: rgba(181,155,0,1);
 	margin-top: 100px;
 	font-size: 0;
 }
 
-.mid {
-	height: 492px;
-	display: inline-block;
-}
-
 .midLeft {
-	position: relative;
+	display: inline-block;
+	width: 27%;
 	padding-top: 30px;
 	opacity: 0;
 	transition: padding-top .5s ease-in-out, opacity .5s ease-in-out;
 	font-size: 13px;
+	margin-top: 130px;
+	margin-left: 17.5%;
 }
 
 .midLeft.shown {
@@ -304,18 +302,20 @@ blockquote {padding: 16px; background: #eee;}
 	position: relative;
 	letter-spacing: 2px;
 	color: #FFF;
+	margin-bottom: 45px;
 }
 
 .midLeft h1 {
-	width: 600px;
 	position: relative;
 	color: #FFF;
 }
 
 .midRight {
+	width: 20.5%;
+	margin-left: 17.5%;
 	font-size: 13px;
-	position: relative;
-	padding-top: 30px;
+	margin-top: 8%;
+	display: inline-block;
 	opacity: 0;
 	transition: padding-top .5s ease-in-out, opacity .5s ease-in-out;
 }
@@ -326,30 +326,16 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 .midRight > p {
-	width: 410px;
-	position: relative;
-	top: 70px;
-	left: 170px;
 	color: #FFF;
 }
 
-
-.midRow {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	max-width: 98%;
-}
-
 .midButton {
-	width: 400px;
+	width: 100%;
 	height: 40px;
+	margin-top: 25px;
 	background: #FFF;
 	text-align: center;
 	cursor: pointer;
-	position: relative;
-	top: 85px;
-	left: 170px;
 	transition: background .35s ease-in-out;
 }
 
@@ -375,7 +361,13 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 
+/*---------Main Section------*/
 
+.mainSection {
+	height: 1200px;
+	width: 100%;
+	background: pink;
+}
 
 
 
@@ -433,6 +425,10 @@ blockquote {padding: 16px; background: #eee;}
 		margin-top: 110px;
 	}
 
+	.carousel.stuck {
+		margin-top: 110px;
+	}
+
 	.carousel-indicators {
 		display: none;
 	}
@@ -458,6 +454,7 @@ blockquote {padding: 16px; background: #eee;}
 		text-align: center;
 		background: #FFF8A8;
 		position: fixed;
+		top: 0;
 		z-index: 11;
 	}
 
