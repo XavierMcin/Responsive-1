@@ -249,7 +249,6 @@ blockquote {padding: 16px; background: #eee;}
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	/*margin: 0 auto;*/
 	margin-top: 50px;
 	max-width: 1580px;
 	height: auto;
@@ -355,10 +354,6 @@ blockquote {padding: 16px; background: #eee;}
 	color: #FFF;
 }
 
-.buttonContainer {
-	width: 400px;
-	height: 400px;
-}
 
 
 /*---------Main Section------*/
@@ -366,7 +361,33 @@ blockquote {padding: 16px; background: #eee;}
 .mainSection {
 	height: 1200px;
 	width: 100%;
-	background: pink;
+}
+
+.mainSection p {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 100;
+	color: #707272;
+	margin-top: 75px;
+	margin-left: 9%;
+}
+
+.colors {
+	margin: auto;
+	max-width: 80%;
+	height: auto;
+}
+
+.colors div {
+	max-width: 100%;
+	width: 45%;
+	height: 476px;
+	background: blue;
+	display: inline-block;
+}
+
+.colors div:nth-child(2) {
+	margin-left: 15px;
 }
 
 
@@ -553,6 +574,62 @@ blockquote {padding: 16px; background: #eee;}
 	.menuOption.slide {
 		right: 0;
 	}
+
+
+	/*-----------Mid Section------------*/
+	
+	.midSection {
+		margin-top: 0;
+	}
+
+
+
+	.midLeft {
+		width: 80%;
+		display: block;
+		margin-left: 100px;
+		margin-top: 0;
+		opacity: 1;
+		padding-top: 0;
+		position: relative;
+		top: 100px;
+	}
+
+	.midLeft h6 {
+		margin: 0;
+	}
+
+	.midLeft h1 {
+		padding-top: 20px;
+	}
+
+	.midRight {
+		width: 80%;
+		display: block;
+		margin-top: 0;
+		margin-left: 100px;
+		opacity: 1;
+		padding-top: 0;
+		position: relative;
+		top: 120px;
+	}
+
+	.midButton {
+		width: 150px;
+		display: block;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
