@@ -361,6 +361,7 @@ blockquote {padding: 16px; background: #eee;}
 .mainSection {
 	height: 1200px;
 	width: 100%;
+	position: relative;
 }
 
 .mainSection p {
@@ -373,25 +374,91 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 .colors {
-	margin: auto;
-	max-width: 80%;
-	height: auto;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.colors a {
+	text-decoration: none;
+}
+
+.colors a div {
+	position: relative;
 }
 
 .colors div {
-	max-width: 100%;
+	max-width: 780px;
 	width: 45%;
-	height: 476px;
-	background: blue;
+	height: auto;
 	display: inline-block;
 }
 
-.colors div:nth-child(2) {
-	margin-left: 15px;
+
+.colors div:first-of-type {
+	margin-right: 7.5px;
 }
 
+.colors div:last-of-type {
+	margin-left: 7.5px;
+}
 
+.colors a:hover img {
+	opacity: .1;
+}
 
+.colors img {
+	width: 780px;
+	height: auto;
+	display: inline-block;
+	vertical-align: bottom;
+	transition: opacity .5s ease-in-out;
+}
+
+.mainButton {
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 152px;
+	height: 40px;
+	background: #FFF;
+	text-align: center;
+	cursor: pointer;
+	transition: background .35s ease-in-out, opacity .5s ease-in-out, top .5s ease-in-out;
+	display: block;
+	opacity: 0;
+}
+
+.colors a:hover .mainButton {
+	opacity: 1;
+	top: 300px;
+}
+
+.mainButton p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	color: #9d9da1;
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: .5px;
+	transition: color .25s ease-in-out;
+	display: block;
+}
+
+.colors h4 {
+	position: relative;
+	top: 250px;
+	color: #9d9da1;
+	opacity: 0;
+	transition: opacity .5s ease-in-out, top .5s ease-in-out;
+}
+
+.colors a:hover h4 {
+	opacity: 1;
+	top: 200px;
+}
 
 
 
