@@ -4,6 +4,11 @@ html {
 	height: 100%;
 }
 
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
 /* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
 
 /* We like off-black for text. */
@@ -370,15 +375,20 @@ blockquote {padding: 16px; background: #eee;}
 	font-weight: 100;
 	color: #707272;
 	margin-top: 75px;
-	margin-left: 9%;
+	margin-left: 8%;
+	margin-bottom: 100px;
 }
 
 .colors {
-	margin-top: 60px;
 	text-align: center;
+	line-height: 0;
 }
 
 .colors a {
+	text-decoration: none;
+}
+
+.colors a:hover {
 	text-decoration: none;
 }
 
@@ -389,8 +399,8 @@ blockquote {padding: 16px; background: #eee;}
 .colors div {
 	max-width: 780px;
 	width: 45%;
-	height: auto;
 	display: inline-block;
+	height: auto;
 }
 
 
@@ -409,14 +419,14 @@ blockquote {padding: 16px; background: #eee;}
 .colors img {
 	width: 780px;
 	height: auto;
-	display: inline-block;
-	vertical-align: bottom;
+	display: block;
 	transition: opacity .5s ease-in-out;
+	vertical-align: top;
 }
 
 .mainButton {
 	position: absolute;
-	top: 350px;
+	top: 58%;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 152px;
@@ -424,15 +434,21 @@ blockquote {padding: 16px; background: #eee;}
 	background: #FFF;
 	text-align: center;
 	cursor: pointer;
-	transition: background .35s ease-in-out, opacity .5s ease-in-out, top .5s ease-in-out;
+	transition: opacity .5s ease-in-out, background .35s ease-in-out, top .5s ease-in-out;
 	display: block;
 	opacity: 0;
+	z-index: 11;
+}
+
+.mainButton:hover {
+	background: rgba(181,155,0,1);
 }
 
 .colors a:hover .mainButton {
 	opacity: 1;
-	top: 300px;
+	top: 55%;
 }
+
 
 .mainButton p {
 	position: relative;
@@ -447,17 +463,26 @@ blockquote {padding: 16px; background: #eee;}
 	display: block;
 }
 
+.mainButton:hover p {
+	color: #FFF;
+}
+
 .colors h4 {
-	position: relative;
-	top: 250px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 28px;
+	letter-spacing: 1px;
+	top: 42%;
 	color: #9d9da1;
 	opacity: 0;
 	transition: opacity .5s ease-in-out, top .5s ease-in-out;
+	margin: 0;
 }
 
 .colors a:hover h4 {
 	opacity: 1;
-	top: 200px;
+	top: 39%;
 }
 
 
