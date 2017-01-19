@@ -40,7 +40,17 @@ blockquote {padding: 16px; background: #eee;}
 //////////////////////////////////////////////*/
 
 
+
+
+
+
+
+
 /* Top Nav Bar*/
+
+
+
+
 
 
 
@@ -236,7 +246,18 @@ blockquote {padding: 16px; background: #eee;}
 }
 
 
+
+
+
+
+
+
+
 /* Image Scroller */
+
+
+
+
 
 
 
@@ -269,10 +290,29 @@ blockquote {padding: 16px; background: #eee;}
 	height: 8px;
 }
 
+.mobileCarousel {
+	display: none;
+}
+
+
+
+
+
+
+
 
 
 
 /* Middle Section */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -361,7 +401,24 @@ blockquote {padding: 16px; background: #eee;}
 
 
 
+
+
+
+
+
+
 /*---------Main Section------*/
+
+
+
+
+
+
+
+
+
+
+
 
 .mainSection {
 	height: 1200px;
@@ -412,10 +469,6 @@ blockquote {padding: 16px; background: #eee;}
 	margin-left: 7.5px;
 }
 
-.colors a:hover img {
-	opacity: .1;
-}
-
 .colors img {
 	width: 780px;
 	height: auto;
@@ -437,18 +490,8 @@ blockquote {padding: 16px; background: #eee;}
 	transition: opacity .5s ease-in-out, background .35s ease-in-out, top .5s ease-in-out;
 	display: block;
 	opacity: 0;
-	z-index: 11;
+	z-index: 5;
 }
-
-.mainButton:hover {
-	background: rgba(181,155,0,1);
-}
-
-.colors a:hover .mainButton {
-	opacity: 1;
-	top: 55%;
-}
-
 
 .mainButton p {
 	position: relative;
@@ -463,9 +506,6 @@ blockquote {padding: 16px; background: #eee;}
 	display: block;
 }
 
-.mainButton:hover p {
-	color: #FFF;
-}
 
 .colors h4 {
 	position: absolute;
@@ -480,10 +520,7 @@ blockquote {padding: 16px; background: #eee;}
 	margin: 0;
 }
 
-.colors a:hover h4 {
-	opacity: 1;
-	top: 39%;
-}
+
 
 
 
@@ -556,7 +593,15 @@ blockquote {padding: 16px; background: #eee;}
 
 
 
+
+
+
+
 	/* Mobile Menu */ 
+
+
+
+
 
 
 
@@ -568,7 +613,7 @@ blockquote {padding: 16px; background: #eee;}
 		background: #FFF8A8;
 		position: fixed;
 		top: 0;
-		z-index: 11;
+		z-index: 99;
 	}
 
 	svg {
@@ -583,10 +628,6 @@ blockquote {padding: 16px; background: #eee;}
 		top: 35px;
 		left: 50px;
 		transition: transform .30s cubic-bezier(0.42, 0, 0, 0.53);
-	}
-
-	.hamMenu.menuSlide {
-		transform: translateX(-35px);
 	}
 
 	.hamMenu span:first-of-type {
@@ -668,7 +709,20 @@ blockquote {padding: 16px; background: #eee;}
 	}
 
 
+
+
+
+
+
+
 	/*-----------Mid Section------------*/
+
+
+
+
+
+
+
 	
 	.midSection {
 		margin-top: 0;
@@ -714,11 +768,42 @@ blockquote {padding: 16px; background: #eee;}
 
 
 
+/*---------Main Section---------*/
 
+.colors {
+	font-size: 0;
+}
 
+.mainButton {
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	background: rgba(181,155,0,1);
+}
 
+.mainButton:hover {
+	opacity: .6;
+}
 
+.mainButton p {
+	color: #FFF;
+}
 
+.colors h4 {
+	position: relative;
+	margin-top: 30px;
+	opacity: 1;
+}
+
+.colors div:first-of-type {
+	margin-right: 0;
+}
+
+.colors div:last-of-type {
+	margin-left: 0;
+}
 
 
 
@@ -733,6 +818,215 @@ blockquote {padding: 16px; background: #eee;}
 	.mobileMenu svg {
 		display: none;
 	}
+
+	.colors a:hover h4 {
+		opacity: 1;
+		top: 39%;
+	}
+
+	.mainButton:hover {
+		background: rgba(181,155,0,1);
+	}
+
+	.colors a:hover .mainButton {
+		opacity: 1;
+		top: 55%;
+	}
+
+	.mainButton:hover p {
+		color: #FFF;
+	}
+
+	.colors a:hover img {
+		opacity: .1;
+	}
+
+}
+
+@media screen and (min-width: 700px) {
+
+	.hamMenu.menuSlide {
+		transform: translateX(-35px);
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.carousel-inner {
+		display: none;
+	}
+
+	.mobileCarousel {
+		display: block;
+	}
+
+	.carousel {
+		margin-top: 80px;
+	}
+
+	.carousel-indicators {
+		display: block;
+	}
+
+	svg {
+		transform: scale(.83);
+		margin-top: 14px;
+		position: relative;
+		top: 0;
+	}
+
+	.mobileMenu {
+		height: 80px;
+		width: 100%;
+		text-align: center;
+		background: #FFF8A8;
+		position: fixed;
+		top: 0;
+		z-index: 11;
+	}
+
+	.hamMenu {
+		width: 57px;
+		height: 41px;
+		position: absolute;
+		top: 18px;
+		left: 2px;
+		transition: transform .30s cubic-bezier(0.42, 0, 0, 0.53);
+		z-index: 50;
+	}
+
+	.shoppingBag {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 29px;
+		right: 30px;
+		text-decoration: none;
+		color: #707272;
+	}
+
+	.shoppingBag span {
+		margin-left: 2px;
+		font-size: 12px;
+	}
+
+	.menuOption {
+		width: 100%;
+		height: 100%;
+		background: #FFFB67;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		z-index: 12;
+		transition: left .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+
+	.menuOption.slide {
+		left: 0;
+	}
+
+
+
+
+
+
+/*-------Mid Section------*/
+
+
+
+
+
+	.midSection {
+		width: 100%;
+		height: 350px;
+		position: relative;
+		background: rgba(181,155,0,1);
+		margin-top: 0px;
+		font-size: 0;
+	}
+
+	.midLeft {
+		width: 80%;
+		display: block;
+		margin-left: 25px;
+		margin-top: 0;
+		opacity: 1;
+		padding-top: 0;
+		position: relative;
+		top: 30px;
+	}
+
+	.midLeft h6 {
+		margin: 0;
+	}
+
+	.midLeft h1 {
+		padding-top: 20px;
+	}
+
+	.midRight {
+		width: 80%;
+		display: block;
+		margin-top: 0;
+		margin-left: 25px;
+		opacity: 1;
+		padding-top: 0;
+		position: relative;
+		top: 50px;
+	}
+
+
+
+
+/*---------Main Section----------*/
+
+
+	.colors {
+		font-size: 0;
+	}
+
+	.mainButton {
+		position: relative;
+		width: 90%;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+		background: rgba(181,155,0,1);
+	}
+
+	.mainButton:hover {
+		opacity: .6;
+	}
+
+	.mainButton p {
+		color: #FFF;
+	}
+
+	.colors h4 {
+		position: relative;
+		margin-top: 30px;
+		opacity: 1;
+	}
+
+	.colors div {
+		display: block;
+		width: 100%;
+	}
+
+	.colors div:first-of-type {
+		margin-right: 0;
+	}
+
+	.colors div:last-of-type {
+		margin-left: 0;
+	}
+
+	.mainTop p:first-of-type {
+		display: none;
+	}
+
+
 }
 
 
